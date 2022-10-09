@@ -21,6 +21,8 @@ export function getSearchMovies(query) {
         );
 }
 
+///dfghjkl;'
+
 
 export function getDetailsMovies(movieId) {
 
