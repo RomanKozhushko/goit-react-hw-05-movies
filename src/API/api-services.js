@@ -1,5 +1,5 @@
 const BASE_URL = 'https://api.themoviedb.org/3/';
-const MY_KEY = 'ffa1dbd293d2550fedb353b8b8700950';
+const MY_KEY = 'e09801b88bee36721ddccafeb1a578e0';
 
 export function getPoPMovies() {
    
