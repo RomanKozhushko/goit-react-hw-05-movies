@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+//Стилізуємо REACT компонент NavLink!!!
 export const NavLinkStyled = styled(NavLink)`
   width: 40px;
   margin-bottom: 20px;
