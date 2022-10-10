@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { BackButton } from '../components/BackButton/BackButton';
-import { getDetailsMovies } from '../API/api-services';
+import { fetchDetailsMovies } from '../API/api-services';
 import { MovieCard } from '../components/MovieCard/MovieCard';
 
 
@@ -11,10 +11,8 @@ export default function MovieView() {
   const [movie, setMovie] = useState(null);
   const { movieId } = useParams();
     
-
-
-  useEffect(() => {
-    getDetailsMovies(movieId).then(data => {
+useEffect(() => {
+   fetchDetailsMovies(movieId).then(data => {
       setMovie(data);
     });
   }, [movieId]);

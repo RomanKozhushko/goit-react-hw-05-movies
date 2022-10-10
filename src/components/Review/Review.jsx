@@ -1,4 +1,4 @@
-import { getRewiesMovies } from 'API/api-services';
+import { fetchRewiesMovies } from 'API/api-services';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ReviewsItem } from '../Review/ReviewsItem';
@@ -9,7 +9,7 @@ export const Review = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
-    getRewiesMovies(movieId).then(data => {
+    fetchRewiesMovies(movieId).then(data => {
       setMovieReviews(data.results);
     });
   }, [movieId]);

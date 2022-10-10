@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FilmList } from '../components/FilmList/FilmList';
-import { getPoPMovies } from '../API/api-services';
+import { fetchPopMovies } from '../API/api-services';
 
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
   
   useEffect(() => {
     
-    getPoPMovies().then(data => {
+    fetchPopMovies().then(data => {
         setPopMoviesList(data.results);
         console.log(data.results);
     });

@@ -1,6 +1,8 @@
 import { useLocation } from 'react-router-dom';
 import { NavLinkStyled } from './BackButton.styled';
 
+
+// Повернення на попередню сторінку
 export const BackButton = () => {
   const location = useLocation();
 

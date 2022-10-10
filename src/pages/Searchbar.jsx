@@ -3,7 +3,7 @@ import { SearchHeader, SearchBtn, SearchForm, SearchLabel, SearchInput } from '.
 import { FilmList } from '../components/FilmList/FilmList';
 import { useSearchParams } from 'react-router-dom';
 import { Notify } from 'notiflix';
-import { getSearchMovies } from '../API/api-services';
+import { fetchSearchMovies } from '../API/api-services';
 
 
 
@@ -37,7 +37,7 @@ export default function Searchbar() {
       return;
       }
       
-    getSearchMovies(searchParams.get('query')).then(data => {
+    fetchSearchMovies(searchParams.get('query')).then(data => {
       setSearchFilmList(data.results);
     });
   }, [searchParams, query]);

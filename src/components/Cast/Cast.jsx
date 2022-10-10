@@ -1,4 +1,4 @@
-import { getCastMovies } from 'API/api-services';
+import { fetchCastMovies } from 'API/api-services';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { CastItem } from '../Cast/CastItem';
@@ -10,7 +10,7 @@ export const Cast = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
-    getCastMovies(movieId).then(data => {
+    fetchCastMovies(movieId).then(data => {
       setMovieCast(data.cast);
     });
   }, [movieId]);
