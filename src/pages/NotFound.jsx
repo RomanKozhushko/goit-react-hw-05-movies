@@ -1,4 +1,8 @@
-import { NavLinkNotFound, DivStyled, TextStyled } from '../components/BackButton/BackButton.styled';
+import {
+  NavLinkNotFound,
+  DivStyled,
+  TextStyled,
+} from '../components/BackButton/BackButton.styled';
 
 export default function NotFound() {
   return (
@@ -7,17 +11,14 @@ export default function NotFound() {
         <img
           src="https://papik.pro/uploads/posts/2022-08/thumbs/1661927859_31-papik-pro-p-smailik-razocharovanie-png-32.png"
           alt="not found"
-                  width="400"
-                  height="400"
+          width="400"
+          height="400"
         />
         <TextStyled>
           Oooops! Page not found!
-          <NavLinkNotFound to="/">
-            Return Home
-          </NavLinkNotFound>
+          <NavLinkNotFound to="/">Return Home</NavLinkNotFound>
         </TextStyled>
       </div>
     </DivStyled>
   );
 }
-

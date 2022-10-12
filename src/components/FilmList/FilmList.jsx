@@ -2,10 +2,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { List } from '../SharedLayout/SharedLayout.styled';
 import { PropTypes } from 'prop-types';
 
-
 export const FilmList = ({ filmList }) => {
   const location = useLocation();
-    
+
   return (
     <>
       <List>
@@ -22,7 +21,16 @@ export const FilmList = ({ filmList }) => {
                   alt={title ? title : name}
                   width="230"
                 />
-                      <p style={{ color: 'lightpink', paddingLeft: "12px", fontSize: "28px", fontWeight: "bold"} }>{title ? title : name}</p>
+                <p
+                  style={{
+                    color: 'lightpink',
+                    paddingLeft: '12px',
+                    fontSize: '28px',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  {title ? title : name}
+                </p>
               </Link>
             </li>
           );

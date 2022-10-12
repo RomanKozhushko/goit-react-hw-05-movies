@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ReviewsItem } from '../Review/ReviewsItem';
 
-
 export const Review = () => {
   const [movieReviews, setMovieReviews] = useState(null);
   const { movieId } = useParams();
@@ -13,7 +12,6 @@ export const Review = () => {
       setMovieReviews(data.results);
     });
   }, [movieId]);
-    
 
   return (
     <>

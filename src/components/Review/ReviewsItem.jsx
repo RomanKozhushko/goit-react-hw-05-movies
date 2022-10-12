@@ -1,16 +1,15 @@
 import { PropTypes } from 'prop-types';
 
-
 export const ReviewsItem = ({ reviews }) => {
-    const { author_details: { name }, content } = reviews;
-    
+  const {
+    author_details: { name },
+    content,
+  } = reviews;
 
   return (
     <>
       <h3>Author: {name ? name : 'anonymus'}</h3>
-      <p style={{ backgroundColor: '#d5e6eb', padding: '10px' }}>
-        {content}
-      </p>
+      <p style={{ backgroundColor: '#d5e6eb', padding: '10px' }}>{content}</p>
       <hr />
     </>
   );

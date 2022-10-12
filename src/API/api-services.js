@@ -12,11 +12,11 @@ export function fetchPopMovies() {
 
 //// Запит на пошук фільмів відповідно до пошукового слова!
 export function fetchSearchMovies(query) {
-  return fetch(`${BASE_URL}search/movie?api_key=${API_KEY}&query=${query}`).then(
-    response => {
-      return response.json();
-    }
-  );
+  return fetch(
+    `${BASE_URL}search/movie?api_key=${API_KEY}&query=${query}`
+  ).then(response => {
+    return response.json();
+  });
 }
 // Запит на завантаження детальної інформації про фільм!
 export function fetchDetailsMovies(movieId) {
