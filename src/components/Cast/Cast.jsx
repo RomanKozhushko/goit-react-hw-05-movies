@@ -1,7 +1,7 @@
 import { fetchCastMovies } from 'API/api-services';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { CastItem } from '../Cast/CastItem';
+import { CastItem } from 'components/Cast/CastItem';
 import { List } from '../SharedLayout/SharedLayout.styled';
 
 
