@@ -22,7 +22,7 @@ export const FilmList = ({ filmList }) => {
                   alt={title ? title : name}
                   width="230"
                 />
-                      <p style={{ color: "rgb(255, 121, 62)", paddingLeft: "10px", fontSize: "16px", fontWeight: "bold"} }>{title ? title : name}</p>
+                      <p style={{ color: 'lightpink', paddingLeft: "12px", fontSize: "28px", fontWeight: "bold"} }>{title ? title : name}</p>
               </Link>
             </li>
           );

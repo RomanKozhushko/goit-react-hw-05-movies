@@ -3,20 +3,21 @@ import styled from 'styled-components';
 
 //Стилізуємо REACT компонент NavLink!!!
 export const NavLinkStyled = styled(NavLink)`
-  width: 40px;
+  text-align: center;
+  font-size: 30px ;
+  color: #fff;
   margin-bottom: 20px;
   display: block;
   padding: 10px;
   text-decoration: none;
   border: 1px solid transparent;
-  background-color: rgb(255, 121, 62);
-  color: #fff;
+  background-color: lightpink;
   transition: all 250 linear;
   border-radius: 4px;
   &:hover {
-    color: rgb(255, 121, 62);
+    color: lightpink;
     background-color: #fff;
-    border: 1px solid rgb(255, 121, 62);
+    border: 3px solid lightpink;
   }
 `;
 export const NavLinkNotFound = styled(NavLink)`
@@ -25,19 +26,19 @@ export const NavLinkNotFound = styled(NavLink)`
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   border: 1px solid transparent;
-  background-color: rgb(255, 121, 62);
+  background-color: lightpink;
   color: #fff;
   transition: all 250 linear;
   border-radius: 4px;
   font-size: 20px;
   &:hover {
-    color: rgb(255, 121, 62);
+    color: lightpink;
     background-color: #fff;
-    border: 1px solid rgb(255, 121, 62);
+    border: 3px solid lightpink;
   }
 `;
 

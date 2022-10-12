@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { SearchHeader, SearchBtn, SearchForm, SearchLabel, SearchInput } from '../pages/Searchbar.styles';
-import { FilmList } from '../components/FilmList/FilmList';
+import { SearchHeader, SearchBtn, SearchForm, SearchLabel, SearchInput } from './Searchbar.styles';
+import { FilmList } from '../FilmList/FilmList';
 import { useSearchParams } from 'react-router-dom';
 import { Notify } from 'notiflix';
-import { fetchSearchMovies } from '../API/api-services';
+import { fetchSearchMovies } from '../../API/api-services';
 
 
 

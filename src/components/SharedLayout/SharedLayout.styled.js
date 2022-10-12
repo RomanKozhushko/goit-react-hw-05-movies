@@ -13,7 +13,7 @@ export const Header = styled.header`
   gap: 12px;
   padding: 8px 0;
   margin-bottom: 16px;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid lightpink;
   > nav {
     display: flex;
   }
@@ -27,7 +27,7 @@ export const Link = styled(NavLink)`
   font-weight: 500;
   &.active {
     color: white;
-    background-color: rgb(255, 121, 62);
+    background-color: lightpink;
   }
 `;
 

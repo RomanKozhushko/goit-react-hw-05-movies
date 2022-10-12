@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const SearchHeader = styled.div`
+export const SearchHeader = styled.div`
   top: 0;
   left: 0;
   z-index: 1100;
@@ -17,7 +17,7 @@ const SearchHeader = styled.div`
   background-color: transparent;
 `;
 
-const SearchForm = styled.form`
+export const SearchForm = styled.form`
   display: flex;
   align-items: center;
   width: 100%;
@@ -27,26 +27,28 @@ const SearchForm = styled.form`
   overflow: hidden;
 `;
 
-const SearchBtn = styled.button`
+export const SearchBtn = styled.button`
   display: inline-block;
-  width: 37px;
+  width: 47px;
   height: 37px;
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/OOjs_UI_icon_search-ltr.svg/1200px-OOjs_UI_icon_search-ltr.svg.png');
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
+  border: 6px solid lightpink;
   &:hover {
     opacity: 1;
-    background-color: rgb(255, 121, 62);
-    border-color: rgb(255, 121, 62);
+    background-color:  lightpink;
+    border: 6px solid lightpink;
+    
   }
 `;
 
-const SearchLabel = styled.label`
+export const SearchLabel = styled.label`
   position: absolute;
   width: 1px;
   height: 1px;
@@ -58,19 +60,19 @@ const SearchLabel = styled.label`
   border: 0;
 `;
 
-const SearchInput = styled.input`
+export const SearchInput = styled.input`
   display: inline-block;
   width: 100%;
   font: inherit;
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px;
   outline: none;
   padding-left: 4px;
   padding-right: 4px;
+  border: 3px solid lightpink;
   &::placeholder {
     font: inherit;
     font-size: 18px;
   }
 `;
 
-export { SearchHeader, SearchBtn, SearchForm, SearchLabel, SearchInput };

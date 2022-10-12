@@ -14,7 +14,7 @@ export const Review = () => {
     });
   }, [movieId]);
     
-    
+
   return (
     <>
       {movieReviews && movieReviews.length ? (

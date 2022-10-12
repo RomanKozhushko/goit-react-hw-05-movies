@@ -21,6 +21,7 @@ useEffect(() => {
     
   return (
     <>
+      
       <BackButton />
       {movie && <MovieCard movie={movie} />}
       <hr />
@@ -28,13 +29,13 @@ useEffect(() => {
       <ul>
         <li>
           <Link state={location.state} to="cast"
-          style={{ color: "rgb(255, 121, 62)", paddingLeft: "10px", fontSize: "16px", fontWeight: "bold"} }>
+          style={{ color: 'lightpink', display: "block",  padding: "15px", fontSize: "26px", fontWeight: "bold"}}>
             Cast
           </Link>
         </li>
         <li>
           <Link state={location.state} to="reviews"
-          style={{ color: "rgb(255, 121, 62)", paddingLeft: "10px", fontSize: "16px", fontWeight: "bold"} }>
+          style={{ color: 'lightpink', display: "block",  padding: "15px", fontSize: "26px", fontWeight: "bold"} }>
             Review
           </Link>
         </li>
