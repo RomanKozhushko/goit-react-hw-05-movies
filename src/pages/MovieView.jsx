@@ -66,10 +66,3 @@ export default function MovieView() {
       <BackButton />
       {movie && <MovieCard movie={movie} />}
       <hr />
-
-      <ul>
-        <li>
-          <Link
-            state={location.state}
-
-  
