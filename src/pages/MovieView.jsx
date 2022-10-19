@@ -89,10 +89,3 @@ export default function MovieView() {
             to="reviews"
             style={{
               color: 'lightpink',
-              display: 'block',
-              padding: '15px',
-              fontSize: '26px',
-              fontWeight: 'bold',
-            }}
-          >
-  
