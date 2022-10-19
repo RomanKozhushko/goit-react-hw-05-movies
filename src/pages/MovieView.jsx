@@ -71,9 +71,5 @@ export default function MovieView() {
         <li>
           <Link
             state={location.state}
-            to="cast"
-            style={{
-              color: 'lightpink',
-              display: 'block',
- nk
+
   
