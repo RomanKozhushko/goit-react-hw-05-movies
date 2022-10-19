@@ -95,8 +95,4 @@ export default function MovieView() {
               fontWeight: 'bold',
             }}
           >
-            Review
-          </Link>
-        </li>
-      </ul>
-
+  
