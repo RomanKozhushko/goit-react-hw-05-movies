@@ -59,10 +59,3 @@ export default function MovieView() {
   );
 }
 
-
-
- return (
-    <>
-      <BackButton />
-      {movie && <MovieCard movie={movie} />}
-      <hr />
