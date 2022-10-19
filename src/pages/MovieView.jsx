@@ -69,11 +69,3 @@ export default function MovieView() {
       views"
       {{
          'lightpink',
-        y: 'block',
-        g: '15px',
-        ze: '26px',
-        ight: 'bold',
-      
-    
- 
-          
