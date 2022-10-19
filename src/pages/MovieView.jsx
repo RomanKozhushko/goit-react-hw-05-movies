@@ -58,3 +58,28 @@ export default function MovieView() {
     </>
   );
 }
+
+
+
+          </Link  >
+        </li  >
+  
+    
+      {location.state}
+      views"
+      {{
+         'lightpink',
+        y: 'block',
+        g: '15px',
+        ze: '26px',
+        ight: 'bold',
+      
+    
+      
+    >
+  
+      </ul  >
+  let />
+    </>
+  );
+}
