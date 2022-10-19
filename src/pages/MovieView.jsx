@@ -75,11 +75,5 @@ export default function MovieView() {
         ight: 'bold',
       
     
-      
-    >
-  
-      </ul  >
-  let />
-    </>
-  );
-}
+ 
+          
