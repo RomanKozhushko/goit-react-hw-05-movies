@@ -85,7 +85,4 @@ export default function MovieView() {
         </li>
         <li>
           <Link
-            state={location.state}
-            to="reviews"
-            style={{
-              color: 'lightpink',
+  
