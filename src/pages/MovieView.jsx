@@ -59,13 +59,3 @@ export default function MovieView() {
   );
 }
 
-
-
-          </Link  >
-        </li  >
-  
-    
-      {location.state}
-      views"
-      {{
-         'lightpink',
