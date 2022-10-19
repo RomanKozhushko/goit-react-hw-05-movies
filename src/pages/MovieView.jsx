@@ -99,8 +99,4 @@ export default function MovieView() {
           </Link>
         </li>
       </ul>
-      <Outlet />
-    </>
-  );
-}
 
